@@ -1,0 +1,389 @@
+body {
+    margin:0;
+    padding : 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000;
+    color : #fff;
+    overflow : hidden;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+.sidebar {
+    background-color: #000;
+    margin-right: 0.5rem;
+    width: 340px;
+    border-radius: 1rem;        /* 1 rem = 16px*/
+    
+}
+
+.main-content {
+    background-color: #121212;
+    flex : 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding : 0 1.5rem 0 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color : white;
+}
+
+.main .sidebar .nav {
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;  
+    padding: 0.5rem 0.75rem;
+}
+.nav-option {
+    line-height: 2.5rem;
+    opacity: 0.7;
+    margin-left: 0.7rem;
+    padding: 0.5rem 0.75rem;
+    font-weight: 700;
+}
+.nav-option:hover {
+    opacity: 1;
+    font-weight: bold;
+}
+
+.nav-option i {
+    font-size: 1.25rem;
+}
+
+.nav-option a {
+    font-size: 1rem;
+}
+
+.library {
+    background-color: #121212;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    height: 100%;
+}
+
+.lib-options img {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+}
+
+ .icons {
+    font-size: 1.25rem;
+}
+
+.icons i {
+    opacity: 0.7;
+    margin: 1rem;  
+}
+.icons i:hover{
+    opacity: 1;
+}
+
+.box {
+    border-radius: 0.5rem;
+    background-color: #232323;
+    height: 8rem;
+    margin: 0.75rem 0 1.75rem 0;
+    padding: 0.75rem 1rem;
+}
+
+.box .box-p1 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.box .box-p2 {
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+.badge {
+    font-weight: 700;
+    border: none;
+    border-radius: 100px;
+    background-color: #fff;
+    color : black;
+    padding : 0.25rem 1rem;
+    margin-top: 1rem;
+    height: 2rem;
+    width: fit-content;
+    transition: 0.3ms;
+}
+
+.badge:hover {
+    transform: scale(1.1);
+}
+
+.arrow {
+    height: 1.9rem;
+    width: 1.9rem;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.sticky-nav {
+    position: sticky;
+    background-color: #121212;
+    top : 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 0.75rem 0 0.75rem 0;
+}
+
+.sticky-nav-icons {
+    margin-left: 0.75rem;
+    opacity: 0.7;
+}
+
+.sticky-nav-icons img {
+    border-radius: 50%;
+    padding: 0.2rem;
+    background-color: #000;
+}
+
+.sticky-nav-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sticky-nav-options button {
+    margin-left: 10px;
+}
+.sticky-nav-options i {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+#user_badge {
+    background-color: black;
+    color : white;
+}
+
+.card {
+    background-color: #232323;
+    width: 160px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 2.5rem;
+    margin-top: 1rem;
+
+    /* margin-top: -20px; */
+}
+
+h2:hover {
+    text-decoration:underline white;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-title {
+    font-weight: 700;
+}
+
+.card-info {
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+.footer {
+    height: 250px;
+    display: flex;
+    align-items: center;
+}
+
+.line {
+    border-top: 1px solid white;
+    opacity: 0.2;
+    width: 95%;
+    height: 30%;
+}
+
+.music-player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    bottom : 0px;
+    width: 100%;
+    height: 80px;
+}
+
+
+
+.player {
+    width: 50%; 
+    /* background-color: rgb(42, 59, 59); */
+}
+
+.music-controls {
+    width: 25%;
+}
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.player-control-icons {
+    height: 0.95rem;
+    margin-right: 1.5rem;
+    margin-top: 0.5rem;
+    opacity: 0.7;
+}
+
+.player-control-icons:hover {
+    opacity: 1;
+}
+
+#music-player-icon-3 {
+    height: 2rem;
+    opacity: 1;
+    transition: 0.2ms;
+}
+#music-player-icon-3:hover {
+    transform: scale(1.1);
+}
+
+.progress-bar {
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-runnable-track {
+    appearance: none;
+    height: 0.2rem;
+    background-color: #ddd;
+    border-radius: 100px;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    margin-top: -6px;
+    border-radius: 50%;
+    background-color: #1bd760;
+}
+
+.timing {
+    font-size: 0.75rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+}
+
+.playback-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+.album {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+    padding: 1rem;
+    /* background-color: #fff; */
+}
+
+
+.album-img {
+    height: 3.5rem;
+    width: 3.5rem;
+    margin-right: 0.75rem;
+}
+
+.album-text {
+    font-size: 0.75rem;
+    line-height: 10px;
+    margin-right: 0.75rem;
+}
+
+.album-icons {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#album-icons-1 {
+    opacity: 0.7;
+}
+#album-icons-2 {
+    opacity: 0.7;
+}
+
+
+.album-icons i {
+    margin-left: 1rem;
+    margin-right: 0.75rem;
+}
+
+#album-icons-1:hover {
+    opacity: 1;
+}
+#album-icons-2:hover {
+    opacity: 1;
+}
+
+.music-controls {
+    display: flex;
+    align-items: center;
+}
+
+
+.music-controls img  {
+    height: 2.5rem;
+    width: 50%;
+    height: 2rem;
+    margin-left: 2rem;
+}
+
+.range {
+    margin-top: -6px;
+    margin-left: 1.5rem;
+    width: 50%;
+}
+
+#user_icon {
+    margin-top: 0.98rem;
+    margin-left: 1rem;
+    border-radius: 50%;
+    padding: 0.5rem;
+    background-color: black;
+}
+
+
+
+

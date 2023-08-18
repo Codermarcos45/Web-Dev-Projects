@@ -1,0 +1,207 @@
+
+@media screen and (max-width : 991px) {
+
+    h3 {
+        font-size: 1.2rem;
+    }
+    .nav-toggle {
+        display: block;
+        margin-right: 20px;
+    }
+    
+    .nav-links {
+        position: absolute;
+        background-color: white;
+        left : -100%;
+        top : 100%;
+        width: 100%;
+        padding-block: 20px;
+        transition: 1s ease-out;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .main-nav {
+        overflow: initial;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+    }
+
+    .example-area {
+        gap : 20px;
+    }
+
+    .example-card {
+        width: calc(50% - 10px);
+        height: 250px;
+    }
+
+    .cta-section {
+        padding-block: 40px;
+    }
+
+    .cta-section-main p {
+        margin-top: 0;
+    }
+
+
+}
+
+
+@media screen and (max-width : 768px) {
+
+    h4 {
+        font-size: 1rem;
+    }
+    .primary-btn {
+        width: 100%;
+        font-size: 1.3remx;
+        margin-left: 0;
+    }
+    .header-section {
+        flex-direction: column-reverse;
+    }
+
+    .header-left {
+        max-width: 100vw;
+        text-align: center;
+    }
+
+
+    .features-section {
+        margin-top: 50px;
+        padding-top : 40px;
+    }
+
+    .features-card {
+        width: calc(50% - 15px);
+        margin-bottom: 30px;
+    }
+
+    .big-features-section {
+        
+    }
+
+    .big-features-section-one {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap : 0;
+    }
+
+    .features-desc {
+        /* text-align: center; */
+        width: 100%;
+        padding : 20px;
+    }
+
+    .features-img {
+        padding : 40px;
+    }
+
+    #fl-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .example-section {
+        padding : 40px var(--padding-inline-section);
+    }
+    .example-card {
+        height: 250px;
+    }
+
+
+    footer {
+        padding-block : 40px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap : 50px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-container a{
+        align-self: center;
+    }
+
+    .footer-container h4 {
+        align-self: center;
+    }
+
+    .sub-footer {
+        gap : 50px;
+    }
+}
+
+
+@media screen and (max-width : 478px) {
+    :root {
+        --padding-inline-section : 10px;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+    }
+    
+    h2 {
+        font-size: 1.7rem;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+    
+    p{ 
+        font-size: 1rem;
+    }
+
+    .features-card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .features-img {
+        padding : 15px;
+    }
+
+    .example-card {
+        width: 100%;
+        height: 220px;
+    }
+
+    .cta-section-main {
+        text-align: center;
+        gap : 20px;
+    }
+
+    .cta-section {
+        padding-block: 20px;
+    }
+
+    footer {
+        padding-block: 30px;
+    }
+
+    .footer-container {
+        gap: 30px;
+    }
+
+    .link-column {
+        gap : 15px;
+    }
+
+    .sub-footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sub-footer-links {
+        flex-direction: column;
+        gap : 20px;
+    }
+}
