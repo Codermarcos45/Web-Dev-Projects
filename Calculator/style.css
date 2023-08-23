@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&family=Tilt+Prism&display=swap');
+* {
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+
+.container {
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    background-color: rgb(39, 1, 39);
+    color: white;
+    position: relative;
+}
+.calculator h3 {
+    color : white;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-family: 'Tilt Prism',cursive;
+}
+
+.calculator {
+    width: 23%;
+    height: 42rem;
+    padding : 2rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top : 40px;
+    box-shadow: 3px 3px 50px #3a3030;
+    border-radius: 20px;
+    background-color: #3a3030;
+
+}
+
+.display {
+    width: 100%;
+    margin-bottom: 2.5rem;
+    font-size: 3rem;
+    outline: none;
+    border: none;
+}
+
+.buttons {
+    display: flex;
+    gap : 1rem;
+}
+
+.buttons input {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    margin-block: 0.5rem;
+    padding : 0.5rem;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    box-shadow: 3px 3px 10px rgb(23, 18, 18);
+    transition: 0.2s;
+}
+
+.buttons input:active {
+    background-color: cornflowerblue;
+    color : rgb(17, 46, 17);
+}
+
+#equal {
+    background-color: rgb(32, 220, 32);
+    font-size: 2rem;
+    transition: 0.5s;
+}
+#equal:active {
+    background-color: white;
+    color : #262626;
+}
+
+.buttons .operator {
+    background-color: rgb(15, 101, 167);
+    color: white;
+}
+
+.buttons .operator:active {
+    background-color: #fff;
+    color : #262626;
+}
+
+#hello {
+    color :white;
+    margin-top: 0.5rem;
+    font-family: 'Lato',sans-serif;
+    font-weight: 700;
+}
